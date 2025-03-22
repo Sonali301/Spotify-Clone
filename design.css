@@ -261,3 +261,104 @@ a{
     border-radius: 50%;         
     margin-top: -6px; 
 }
+
+/*  */
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 250px; /* Reduce sidebar width */
+    }
+
+    .album {
+        width: 130px; /* Adjust album card size */
+        margin-left: 1rem;
+    }
+
+    .player-icon {
+        margin-right: 1rem; /* Reduce spacing between player icons */
+    }
+
+    .progress-bar {
+        width: 60%; /* Adjust progress bar width */
+    }
+}
+
+/* For tablets in portrait mode */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Further reduce sidebar width */
+    }
+
+    .album {
+        width: 120px; /* Adjust album card size */
+        margin-left: 0.5rem;
+    }
+
+    .sticky-nav {
+        padding: 0.5rem 0; /* Reduce padding in sticky nav */
+    }
+
+    .player-control {
+        justify-content: space-around; /* Space out player controls */
+    }
+
+    .progress-bar {
+        width: 50%; /* Adjust progress bar width */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .main {
+        flex-direction: column; /* Stack sidebar and main content vertically */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for sidebar */
+        height: auto; /* Auto height for sidebar */
+        margin-right: 0;
+        border-radius: 0; /* Remove border radius */
+    }
+
+    .library {
+        display: none; /* Hide library on small screens */
+    }
+
+    .main-content {
+        padding: 0 1rem; /* Adjust padding */
+    }
+
+    .album-container {
+        justify-content: center; /* Center album cards */
+    }
+
+    .album {
+        width: 45%; /* Adjust album card size for mobile */
+        margin-left: 0;
+        margin-right: 0.5rem;
+    }
+
+    .music-player {
+        flex-direction: column; /* Stack music player sections vertically */
+        height: auto; /* Auto height for music player */
+        padding: 0.5rem;
+    }
+
+    .side-album, .player, .control {
+        width: 100%; /* Full width for music player sections */
+    }
+
+    .player-control {
+        justify-content: space-between; /* Space out player controls */
+    }
+
+    .progress-bar {
+        width: 80%; /* Adjust progress bar width */
+    }
+
+    .footer {
+        height: 150px; /* Reduce footer height */
+    }
+}
